@@ -191,14 +191,3 @@ Old weights
 |[ljspeech_wavernn_forward_model](https://public-asai-dl-models.s3.eu-central-1.amazonaws.com/TransformerTTS/ljspeech_forward_transformer.zip)| d9ccee6| 3595219 |
 |[ljspeech_wavernn_autoregressive_model_v2](https://public-asai-dl-models.s3.eu-central-1.amazonaws.com/TransformerTTS/ljspeech_autoregressive_transformer.zip)| d9ccee6| 3595219 |
 |[ljspeech_wavernn_autoregressive_model_v1](https://github.com/as-ideas/tts_model_outputs/tree/master/ljspeech_transformertts)| 2f3a1b5| 3595219 |
-## Maintainers
-* Francesco Cardinale, github: [cfrancesco](https://github.com/cfrancesco)
-
-## Special thanks
-[MelGAN](https://github.com/seungwonpark/melgan) and [WaveRNN](https://github.com/fatchord/WaveRNN): data normalization and samples' vocoders are from these repos.
-
-[Erogol](https://github.com/erogol) and the Mozilla TTS team for the lively exchange on the topic.
-
-
-## Copyright
-See [LICENSE](LICENSE) for details.
