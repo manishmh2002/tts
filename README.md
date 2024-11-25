@@ -1,28 +1,12 @@
-<p align="center">
-    <br>
-    <img src="https://raw.githubusercontent.com/as-ideas/TransformerTTS/master/docs/transformer_logo.png" width="400"/>
-    <br>
-</p>
-
 <h2 align="center">
 <p>A Text-to-Speech Transformer in TensorFlow 2</p>
 </h2>
-
-
-Implementation of a non-autoregressive Transformer based neural network for Text-to-Speech (TTS). <br>
-This repo is based, among others, on the following papers:
-- [Neural Speech Synthesis with Transformer Network](https://arxiv.org/abs/1809.08895)
-- [FastSpeech: Fast, Robust and Controllable Text to Speech](https://arxiv.org/abs/1905.09263)
-- [FastSpeech 2: Fast and High-Quality End-to-End Text to Speech](https://arxiv.org/abs/2006.04558)
-- [FastPitch: Parallel Text-to-speech with Pitch Prediction](https://fastpitch.github.io/)
 
 Our pre-trained LJSpeech model is compatible with the pre-trained vocoders:
 - [MelGAN](https://github.com/seungwonpark/melgan)
 - [HiFiGAN](https://github.com/jik876/hifi-gan)
 
 (older versions are available also for [WaveRNN](https://github.com/fatchord/WaveRNN))
-
-For quick inference with these vocoders, checkout the [Vocoding branch](https://github.com/as-ideas/TransformerTTS/tree/vocoding)
 
 #### Non-Autoregressive
 Being non-autoregressive, this Transformer model is:
@@ -32,19 +16,9 @@ Being non-autoregressive, this Transformer model is:
 
 ## 🔈 Samples
 
-[Can be found here.](https://as-ideas.github.io/TransformerTTS/)
 
 These samples' spectrograms are converted using the pre-trained [MelGAN](https://github.com/seungwonpark/melgan) vocoder.<br>
-
-
-Try it out on Colab:
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/as-ideas/TransformerTTS/blob/main/notebooks/synthesize_forward_melgan.ipynb)
-
-## Updates
-- 06/20: Added normalisation and pre-trained models compatible with the faster [MelGAN](https://github.com/seungwonpark/melgan) vocoder.
-- 11/20: Added pitch prediction. Autoregressive model is now specialized as an Aligner and Forward is now the only TTS model. Changed models architectures. Discontinued WaveRNN support. Improved duration extraction with Dijkstra algorithm.
-- 03/20: Vocoding branch.
+.
 
 ## 📖 Contents
 - [Installation](#installation)
@@ -77,7 +51,7 @@ Read the individual scripts for more command line arguments.
 ## Pre-Trained LJSpeech API
 Use our pre-trained model (with Griffin-Lim) from command line with
 ```commandline
-python predict_tts.py -t "Please, say something."
+python predict_tts.py -t "Your sample input text."
 ```
 Or in a python script
 ```python
@@ -158,7 +132,6 @@ python train_tts.py --config config/training_config.yaml
 tensorboard --logdir /logs/directory/
 ```
 
-![Tensorboard Demo](https://raw.githubusercontent.com/as-ideas/TransformerTTS/master/docs/tboard_demo.gif)
 ## Prediction
 ### With model weights
 From command line with
