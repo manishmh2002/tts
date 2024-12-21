@@ -34,7 +34,7 @@ These samples' spectrograms are converted using the pre-trained [MelGAN](https:/
 
 Make sure you have:
 
-* Python >= 3.6
+* Python==3.8.10
 
 Install espeak as phonemizer backend (for macOS use brew):
 ```
